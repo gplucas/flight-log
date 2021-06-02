@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h2>HTML Forms</h2>
-
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+	<!-- Code to get flight information and display the inputs in a table -->
+	
+	<div id="container">
+		<div class="input">From: <input id="departure" type="text" placeholder="ICAO code" />	</div>
+		<div class="input">To: <input id="arrival" type="text" placeholder="ICAO code" />	</div>
+		
+		<button id="entry">Input entry</button>
+	</div>
+	
+	<table id="display">
+		<tr>
+			<th>From</th>
+			<th>To</th>
+		</tr>
+	</table>
+	
+	<script src="script.js"></script>
 
 </body>
 </html>
