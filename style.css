@@ -1,0 +1,61 @@
+html, body {
+  align-items: center;
+  background: #f2f4f8;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.master {
+  width: 50%; 
+  margin: auto;
+  /*--border: rgba(0, 0, 0, 0.125);*/
+}
+
+.airports, .hobbs, .fob {
+  --background: white;
+  /*--border: rgba(0, 0, 0, 0.125);*/
+  --borderDark: rgba(0, 0, 0, 0.25);
+  --borderDarker: rgba(0, 0, 0, 0.5);
+  --bgColorH: 0;
+  --bgColorS: 0%;
+  --bgColorL: 98%;
+  --fgColorH: 210;
+  --fgColorS: 50%;
+  --fgColorL: 38%;
+  --shadeDark: 0.3;
+  --shadeLight: 0.7;
+  --shadeNormal: 0.5;
+  --borderRadius: 0.125rem;
+  --highlight: #306090;
+  float: left;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--borderRadius);
+  box-shadow: 0 1rem 1rem -0.75rem var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+.output {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+table, th, td {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr:hover {
+	background-color: #DCDCDC;
+}

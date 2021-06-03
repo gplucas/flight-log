@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html>
-<body>
+	<head>
+		<title>Flight Log</title>
+	</head>
+		
+	<body>
+		
+	<link rel="stylesheet" href="style.css">
+
 	<!-- Code to get flight information and display the inputs in a table -->
 	
-	<div id="container">
-		<div class="input">From: <input id="departure" type="text" placeholder="ICAO code" />	</div>
-		<div class="input">To: <input id="arrival" type="text" placeholder="ICAO code" />	</div>
-		
-		<button id="entry">Input entry</button>
+	<!-- Input fields and main code -->
+	<div class="master" id="container">
+		<div class="airports">From<input id="departure" type="text" placeholder="ICAO code" /></div>
+		<div class="airports">To<input id="arrival" type="text" placeholder="ICAO code" /></div>
+			<div class="clear"></div>
+		<div class="hobbs">Before start Hobbs<input id="beforeHobbs" type="number" placeholder="Hobbs" /></div>
+		<div class="hobbs">After shutdown Hobbs<input id="afterHobbs" type="number" placeholder="Hobbs" /></div>
+			<div class="clear"></div>
+		<div class="fob">Before takeoff FOB<input id="beforeFob" type="number" placeholder="Fuel onboard" /></div>
+		<div class="fob">After landing FOB<input id="afterFob" type="number" placeholder="Fuel onboard" /></div>
+			<div class="clear"></div>
+		<p><button id="entry">Input entry</button></p>
 	</div>
 	
+	<div class="output">
 	<table id="display">
+	<!-- Onput fields -->
 		<tr>
 			<th>From</th>
 			<th>To</th>
+			<th>Before start Hobbs</th>
+			<th>After shutdown Hobbs</th>
+			<th>Before takeoff FOB</th>
+			<th>After landing FOB</th>
 		</tr>
 	</table>
+	</div>
 	
+	<!-- script to be executed in JavaScript -->
 	<script src="script.js"></script>
-
-</body>
+	</body>
 </html>
