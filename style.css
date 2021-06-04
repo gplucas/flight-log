@@ -7,17 +7,13 @@ html, body {
 .master {
   width: 70%; 
   margin: auto;
-  padding: 1%;
+  padding: 2%;
 }
 
-.airports, .hobbs, .fob, .time {
-  float: left;
+.airports, .hobbs, .fob, .time, .date {
+  float: center;
   background: white;
-  display: flex;
-  flex-direction: column;
   padding: 1%;
-  position: relative;
-  overflow: hidden;
   width: 180px;
   margin: auto;
 }
