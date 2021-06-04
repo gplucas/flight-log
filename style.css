@@ -10,11 +10,21 @@ html, body {
   padding: 2%;
 }
 
-.airports, .hobbs, .fob, .time, .date {
+.airports, .hobbs, .fob, /*.time,*/ .date {
   float: center;
+  text-align: center;
   background: white;
   padding: 1%;
-  width: 180px;
+  width: 200px;
+  margin: auto;
+}
+
+.time {
+  float: center;
+  text-align: right;
+  background: white;
+  padding: 1%;
+  width: 200px;
   margin: auto;
 }
 

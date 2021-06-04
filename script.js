@@ -17,17 +17,17 @@ function displayDetails() {
 	var timeLanding = document.getElementById("timeLanding").value;
 	var timeShutdown = document.getElementById("timeShutdown").value;
 	
-	// Update the if
-	if(!date || !departure || !arrival || !beforeHobbs || !afterHobbs || !beforeFob || !afterFob || !timeStart || !timeTakeoff || !timeLanding || !timeShutdown) {
-		alert("Please fill all the boxes");
+	// Alert to show the user to fill at least the first three input fields
+	 if(!date || !departure || !arrival) {
+		alert("Please, fill at least the Date, Departure and Arrival fields");
 		return;
-	}
+	 }
 	
 	var display = document.getElementById("display");
 	
 	var newRow = display.insertRow(row);
 	
-	// Test required. Verify if is required to add a new var cell
+	// Required to add a new var cell always when update the code
 	var cell1 = newRow.insertCell(0);
 	var cell2 = newRow.insertCell(1);
 	var cell3 = newRow.insertCell(2);
@@ -40,7 +40,7 @@ function displayDetails() {
 	var cell10 = newRow.insertCell(9);
 	var cell11 = newRow.insertCell(10);
 	
-	// Test required. Verify if is required to add a new cell for each input field
+	// Required to add a new cell for each input field
 	cell1.innerHTML = date;
 	cell2.innerHTML = departure;
 	cell3.innerHTML = arrival;
