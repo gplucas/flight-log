@@ -12,15 +12,20 @@
 	
 	<!-- Input fields and main code -->
 	<div class="master" id="container">
+		<div class="airports">Date<input id="date" type="date" /></div>
 		<div class="airports">From<input id="departure" type="text" placeholder="ICAO code" /></div>
 		<div class="airports">To<input id="arrival" type="text" placeholder="ICAO code" /></div>
-			<div class="clear"></div>
 		<div class="hobbs">Before start Hobbs<input id="beforeHobbs" type="number" placeholder="Hobbs" /></div>
 		<div class="hobbs">After shutdown Hobbs<input id="afterHobbs" type="number" placeholder="Hobbs" /></div>
 			<div class="clear"></div>
 		<div class="fob">Before takeoff FOB<input id="beforeFob" type="number" placeholder="Fuel onboard" /></div>
 		<div class="fob">After landing FOB<input id="afterFob" type="number" placeholder="Fuel onboard" /></div>
 			<div class="clear"></div>
+		<div class="time">Start up<input id="timeStart" type="time" /></div>
+		<div class="time">Takeoff<input id="timeTakeoff" type="time" /></div>
+		<div class="time">Landing<input id="timeLanding" type="time" /></div>
+		<div class="time">Shutdown<input id="timeShutdown" type="time" /></div>
+		    <div class="clear"></div>
 		<p><button id="entry">Input entry</button></p>
 	</div>
 	
@@ -28,12 +33,17 @@
 	<table id="display">
 	<!-- Onput fields -->
 		<tr>
+			<th>Date</th>
 			<th>From</th>
 			<th>To</th>
 			<th>Before start Hobbs</th>
 			<th>After shutdown Hobbs</th>
 			<th>Before takeoff FOB</th>
 			<th>After landing FOB</th>
+			<th>Start up</th>
+			<th>Takeoff</th>
+			<th>Landing</th>
+			<th>Shutdown</th>
 		</tr>
 	</table>
 	</div>
