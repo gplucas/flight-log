@@ -4,28 +4,31 @@ html, body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.master {
-  width: 70%; 
-  margin: auto;
-  padding: 2%;
+h1 {
+	font-size: 25px;
 }
 
-.airports, .hobbs, .fob, /*.time,*/ .date {
+.master {
+  width: 100%; 
+  text-align: center;
+  display: flex;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.airports, .hobbs, .fob, .time, .date {
+  display: inline-block;
   float: center;
   text-align: center;
   background: white;
-  padding: 1%;
+  padding: 3px;
   width: 200px;
-  margin: auto;
-}
-
-.time {
-  float: center;
-  text-align: right;
-  background: white;
-  padding: 1%;
-  width: 200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .clear {
@@ -48,4 +51,52 @@ table, th, td {
 
 tr:hover {
 	background-color: #DCDCDC;
+}
+
+.myButtonBlue {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.myButtonBlue:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.myButtonBlue:active {
+	position:relative;
+	top:1px;
+}
+
+.myButtonRed {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButtonRed:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.myButtonRed:active {
+	position:relative;
+	top:1px;
 }

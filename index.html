@@ -5,13 +5,13 @@
 	</head>
 		
 	<body>
-		
+	<h1>flight-log project</h1><br>
 	<link rel="stylesheet" href="style.css">
 
 	<!-- Code to get flight information and display the inputs in a table -->
 	
 	<!-- Input fields and main code -->
-	<div class="master" id="container">
+	    <div class="master" id="container">
 		<div class="date">Date	<br><input id="date" type="date" /></div>
 		<div class="airports">From	<input id="departure" type="text" placeholder="ICAO code" /></div>
 		<div class="airports">To	<br><input id="arrival" type="text" placeholder="ICAO code" /></div>
@@ -22,14 +22,15 @@
 		<div class="time">Start up	<input id="timeStart" type="time" /></div>
 		<div class="time">Takeoff	<input id="timeTakeoff" type="time" /></div>
 		<div class="time">Landing	<input id="timeLanding" type="time" /></div>
-		<div class="time">Shutdown	<input id="timeShutdown" type="time" /></div>
-		<p><button id="entry">Input entry</button></p>
-	</div>
-	
+		<div class="time">Shutdown	<input id="timeShutdown" type="time" /></div></div><br>
+		<br><a id="entry" class="myButtonBlue">Input entry</a>
+		<a id="entry" class="myButtonRed">Clear form</a>
+	    </div>
+		
 	<div class="output">
 	<table id="display">
 	<!-- Onput fields -->
-		<tr>
+		<tr><br>
 			<th>Date</th>
 			<th>From</th>
 			<th>To</th>
