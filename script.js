@@ -55,3 +55,7 @@ function displayDetails() {
 	
 	row++;
 }
+
+function resetForm() {
+  document.getElementById("myForm").reset();
+}

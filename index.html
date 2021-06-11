@@ -11,7 +11,8 @@
 	<!-- Code to get flight information and display the inputs in a table -->
 	
 	<!-- Input fields and main code -->
-	    <div class="master" id="container">
+	<form id="myForm">
+		<div class="master" id="container">
 		<div class="date">Date	<br><input id="date" type="date" /></div>
 		<div class="airports">From	<input id="departure" type="text" placeholder="ICAO code" /></div>
 		<div class="airports">To	<br><input id="arrival" type="text" placeholder="ICAO code" /></div>
@@ -23,8 +24,9 @@
 		<div class="time">Takeoff	<input id="timeTakeoff" type="time" /></div>
 		<div class="time">Landing	<input id="timeLanding" type="time" /></div>
 		<div class="time">Shutdown	<input id="timeShutdown" type="time" /></div></div><br>
+	</form>
 		<br><a id="entry" class="myButtonBlue">Input entry</a>
-		<a id="entry" class="myButtonRed">Clear form</a>
+		<input type="button" class="myButtonRed" onclick="resetForm()" value="Clear form">
 	    </div>
 		
 	<div class="output">
