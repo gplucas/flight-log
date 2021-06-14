@@ -29,10 +29,16 @@
 		<div class="time">Landing	<input id="timeLanding" type="time" /></div>
 		<div class="time">Shutdown	<input id="timeShutdown" type="time" /></div></div>
 	</form><br>
-		<br><input type="button" class="myButtonBlue" id="entry" value="Input entry">
-		<input type="button" class="myButtonRed" onclick="resetForm()" value="Clear form">
+			<!-- Button to input data into the table -->
+			<button class="myButtonBlue" id="entry">
+			<img src="https://i.imgur.com/8sNsG0R.png" style="float:center;width:30px;height:30px">
+			</button>
+				<!-- Button to clean the form and start again -->
+				<button class="myButtonRed" onclick="resetForm()">
+			    <img src="https://i.imgur.com/TCCwtgE.png" style="float:center;width:30px;height:30px">
+			    </button>
 		</div>
-	
+		
 	<div class="output">
 	<table id="display">
 	<!-- Onput fields -->
