@@ -5,6 +5,7 @@ entry.addEventListener("click", displayDetails);
 
 	// Update required when add a new var
 function displayDetails() {
+	var aircraft = document.getElementById("aircraft").value;
 	var date = document.getElementById("date").value;
 	var departure = document.getElementById("departure").value;
 	var arrival = document.getElementById("arrival").value;
@@ -39,19 +40,21 @@ function displayDetails() {
 	var cell9 = newRow.insertCell(8);
 	var cell10 = newRow.insertCell(9);
 	var cell11 = newRow.insertCell(10);
+	var cell12 = newRow.insertCell(11);
 	
 	// Required to add a new cell for each input field
-	cell1.innerHTML = date;
-	cell2.innerHTML = departure;
-	cell3.innerHTML = arrival;
-	cell4.innerHTML = beforeHobbs;
-	cell5.innerHTML = afterHobbs;
-	cell6.innerHTML = beforeFob;
-	cell7.innerHTML = afterFob;
-	cell8.innerHTML = timeStart;
-	cell9.innerHTML = timeTakeoff;
-	cell10.innerHTML = timeLanding;
-	cell11.innerHTML = timeShutdown;
+	cell1.innerHTML = aircraft;
+	cell2.innerHTML = date;
+	cell3.innerHTML = departure;
+	cell4.innerHTML = arrival;
+	cell5.innerHTML = beforeHobbs;
+	cell6.innerHTML = afterHobbs;
+	cell7.innerHTML = beforeFob;
+	cell8.innerHTML = afterFob;
+	cell9.innerHTML = timeStart;
+	cell10.innerHTML = timeTakeoff;
+	cell11.innerHTML = timeLanding;
+	cell12.innerHTML = timeShutdown;
 	
 	row++;
 }

@@ -6,7 +6,7 @@
 		
 	<body>
 	<div class="header">
-	<h1>FLIGHT-LOG PROJECT</h1>
+	<h1>Flight Log project</h1>
 	</div><br>
 	<link rel="stylesheet" href="style.css">
 
@@ -15,13 +15,14 @@
 	<!-- Input fields and main code -->
 	<form id="myForm">
 		<div class="master" id="container">
+		<div class="aircraft">Aircraft reg	<input id="aircraft" type="text" /></div>
 		<div class="date">Date	<br><input id="date" type="date" /></div>
-		<div class="airports">From	<input id="departure" type="text" placeholder="ICAO code" /></div>
-		<div class="airports">To	<br><input id="arrival" type="text" placeholder="ICAO code" /></div>
-		<div class="hobbs">Before start Hobbs	<input id="beforeHobbs" type="number" placeholder="Hobbs" /></div>
-		<div class="hobbs">After shutdown Hobbs	<input id="afterHobbs" type="number" placeholder="Hobbs" /></div>
-		<div class="fob">Before takeoff FOB	<input id="beforeFob" type="number" placeholder="Fuel on board" /></div>
-		<div class="fob">After landing FOB	<input id="afterFob" type="number" placeholder="Fuel on board" /></div>
+		<div class="airports">From	<input id="departure" type="text" /></div>
+		<div class="airports">To	<br><input id="arrival" type="text" /></div>
+		<div class="hobbs">Before start Hobbs	<input id="beforeHobbs" type="number" /></div>
+		<div class="hobbs">After shutdown Hobbs	<input id="afterHobbs" type="number" /></div>
+		<div class="fob">Before takeoff FOB	<input id="beforeFob" type="number" /></div>
+		<div class="fob">After landing FOB	<input id="afterFob" type="number" /></div>
 		<div class="time">Start up	<input id="timeStart" type="time" /></div>
 		<div class="time">Takeoff	<input id="timeTakeoff" type="time" /></div>
 		<div class="time">Landing	<input id="timeLanding" type="time" /></div>
@@ -29,12 +30,13 @@
 	</form><br>
 		<br><input type="button" class="myButtonBlue" id="entry" value="Input entry">
 		<input type="button" class="myButtonRed" onclick="resetForm()" value="Clear form">
-	    </div>
-		
+		</div>
+	
 	<div class="output">
 	<table id="display">
 	<!-- Onput fields -->
 		<tr><br>
+			<th>Aircraft</th>
 			<th>Date</th>
 			<th>From</th>
 			<th>To</th>
