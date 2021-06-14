@@ -5,7 +5,9 @@
 	</head>
 		
 	<body>
-	<h1>flight-log project</h1><br>
+	<div class="header">
+	<h1>FLIGHT-LOG PROJECT</h1>
+	</div><br>
 	<link rel="stylesheet" href="style.css">
 
 	<!-- Code to get flight information and display the inputs in a table -->
@@ -23,9 +25,9 @@
 		<div class="time">Start up	<input id="timeStart" type="time" /></div>
 		<div class="time">Takeoff	<input id="timeTakeoff" type="time" /></div>
 		<div class="time">Landing	<input id="timeLanding" type="time" /></div>
-		<div class="time">Shutdown	<input id="timeShutdown" type="time" /></div></div><br>
-	</form>
-		<br><a id="entry" class="myButtonBlue">Input entry</a>
+		<div class="time">Shutdown	<input id="timeShutdown" type="time" /></div></div>
+	</form><br>
+		<br><input type="button" class="myButtonBlue" id="entry" value="Input entry">
 		<input type="button" class="myButtonRed" onclick="resetForm()" value="Clear form">
 	    </div>
 		
