@@ -19,7 +19,7 @@ function displayDetails() {
 	var timeShutdown = document.getElementById("timeShutdown").value;
 	
 	// Alert to show the user to fill at least the first three input fields
-	 if(!date || !departure || !arrival) {
+		if(!date || !departure || !arrival) {
 		alert("Please, fill at least the Date, Departure and Arrival fields");
 		return;
 	 }
