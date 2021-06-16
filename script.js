@@ -19,10 +19,10 @@ function displayDetails() {
 	var timeShutdown = document.getElementById("timeShutdown").value;
 	
 	// Alert to show the user to fill at least the first three input fields
-		if(!date || !departure || !arrival) {
-		alert("Please, fill at least the Date, Departure and Arrival fields");
-		return;
-	 }
+		//if(!date || !departure || !arrival) {
+		//alert("You have not completed the form.");
+		//return;
+	// }
 	
 	var display = document.getElementById("display");
 	
@@ -41,6 +41,7 @@ function displayDetails() {
 	var cell10 = newRow.insertCell(9);
 	var cell11 = newRow.insertCell(10);
 	var cell12 = newRow.insertCell(11);
+	var cell13 = newRow.insertCell(12);
 	
 	// Required to add a new cell for each input field
 	cell1.innerHTML = aircraft;
@@ -55,10 +56,34 @@ function displayDetails() {
 	cell10.innerHTML = timeTakeoff;
 	cell11.innerHTML = timeLanding;
 	cell12.innerHTML = timeShutdown;
+	cell13.innerHTML = result;
+	
+		var beforeHobbs=document.getElementById("beforeHobbs").value;
+		var afterHobbs=document.getElementById("afterHobbs").value;
+		var result=parseFloat(afterHobbs)-parseFloat(beforeHobbs);
+		if(!isNaN(result));
+		var result = result.toFixed(1);
+			{
+				document.getElementById("answer").innerHTML= result;
+		    }
 	
 	row++;
 }
 
+	// Function to calculate the total flight time
+	// Working on this...
+	/* function flightTime() {
+		var beforeHobbs=document.getElementById("beforeHobbs").value;
+		var afterHobbs=document.getElementById("afterHobbs").value;
+		var result=parseFloat(afterHobbs)-parseFloat(beforeHobbs);
+		if(!isNaN(result));
+		var result = result.toFixed(1);
+			{
+				document.getElementById("answer").innerHTML= result;
+		    }
+	} */
+
+// Function to reset the form
 function resetForm() {
   document.getElementById("myForm").reset();
 }

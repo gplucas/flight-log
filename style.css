@@ -37,7 +37,6 @@ input {
 
 .aircraft, .airports, .hobbs, .fob, .time, .date {
   display: inline-block;
-  float: center;
   text-align: left;
   padding: 3px;
   width: 200px;

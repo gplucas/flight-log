@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+	<meta charset="UTF-8">
 		<title>Flight Log</title>
 		<link rel="icon" href="https://i.imgur.com/JHWI18Q.png">
 	</head>
 	
 	<body>
 	<div class="header">
-	<h1>Flight Log project</h1>
-	<a href="https://github.com/gplucas" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
+	<h1>Flight Log Project</h1>
+	<a href="https://github.com/gplucas" target="_blank"><img alt="" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
 	</div><br>
 	<link rel="stylesheet" href="style.css">
 
@@ -17,10 +18,10 @@
 	<!-- Input fields and main code -->
 	<form id="myForm">
 		<div class="master" id="container">
-		<div class="aircraft">Aircraft reg	<input id="aircraft" type="text" /></div>
+		<div class="aircraft">Aircraft registration	<input id="aircraft" type="text" /></div>
 		<div class="date">Date	<br><input id="date" type="date" /></div>
-		<div class="airports">From	<input id="departure" type="text" /></div>
-		<div class="airports">To	<br><input id="arrival" type="text" /></div>
+		<div class="airports">Departure aerodrome	<input id="departure" type="text" /></div>
+		<div class="airports">Arrival aerodrome	<br><input id="arrival" type="text" /></div>
 		<div class="hobbs">Before start Hobbs	<input id="beforeHobbs" type="number" /></div>
 		<div class="hobbs">After shutdown Hobbs	<input id="afterHobbs" type="number" /></div>
 		<div class="fob">Before takeoff FOB	<input id="beforeFob" type="number" /></div>
@@ -32,18 +33,20 @@
 	</form><br>
 			<!-- Button to input data into the table -->
 			<button class="myButtonBlue" id="entry">
-			<img src="https://i.imgur.com/8sNsG0R.png" style="float:center;width:30px;height:30px">
+			<img alt="" src="https://i.imgur.com/8sNsG0R.png" style="width:30px;height:30px">
 			</button>
 				<!-- Button to clean the form and start again -->
 				<button class="myButtonRed" onclick="resetForm()">
-			    <img src="https://i.imgur.com/TCCwtgE.png" style="float:center;width:30px;height:30px">
+			    <img alt="" src="https://i.imgur.com/TCCwtgE.png" style="width:30px;height:30px">
 			    </button>
-		</div>
-		
+				
+	<!-- Under development... -->
+	<p id="answer"></p>
+	
 	<div class="output">
 	<table id="display">
 	<!-- Onput fields -->
-		<tr><br>
+		<tr>
 			<th>AIRCRAFT</th>
 			<th>DATE</th>
 			<th>FROM</th>
@@ -56,8 +59,9 @@
 			<th>TAKEOFF</th>
 			<th>LANDING</th>
 			<th>SHUTDOWN</th>
+			<th>FLIGHT TIME</th>
 		</tr>
-	</table>
+	</table><br>
 	</div>
 	
 	<!-- script to be executed in JavaScript -->
