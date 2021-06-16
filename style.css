@@ -46,7 +46,6 @@ input {
 .output {
   margin: auto;
   width: auto;
-  padding: 10px;
 }
 
 table, th, td {
@@ -63,23 +62,35 @@ table {
 }
 
 .myButtonBlue {
-	border: 1px solid #124d77;
+	border: 1px solid black;
 	border-radius: 3px;
 	display: inline-block;
 	cursor: pointer;
-	color: #ffffff;
 	padding: 6px 24px;
 	height: 40px;
 	width: 125px;
 }
 
 .myButtonRed {
-	border: 1px solid #942911;
+	border: 1px solid black;
 	border-radius: 3px;
 	display: inline-block;
 	cursor: pointer;
-	color: #ffffff;
 	padding: 6px 24px;
 	height: 40px;
 	width: 125px;
+}
+
+.container { 
+  height: 100px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
