@@ -61,17 +61,7 @@ table {
 	border: 1px solid black;
 }
 
-.myButtonBlue {
-	border: 1px solid black;
-	border-radius: 3px;
-	display: inline-block;
-	cursor: pointer;
-	padding: 6px 24px;
-	height: 40px;
-	width: 125px;
-}
-
-.myButtonRed {
+.myButtonBlue, .myButtonRed {
 	border: 1px solid black;
 	border-radius: 3px;
 	display: inline-block;

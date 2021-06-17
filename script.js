@@ -61,19 +61,6 @@ function displayDetails() {
 	row++;
 }
 
-	// Function to calculate the total flight time
-	// Working on this...
-	/* function laranja() {
-			var primeiro = document.getElementById("beforeHobbs").value;
-			var segundo = document.getElementById("afterHobbs").value;
-			var result = parseFloat(segundo)-parseFloat(primeiro);
-				if(!isNaN(result));
-				var result = result.toFixed(1);
-			{
-				document.getElementById("resultado").innerHTML = result;
-			}
-		} */
-
 // Function to reset the form
 function resetForm() {
   document.getElementById("myForm").reset();
