@@ -65,3 +65,8 @@ function displayDetails() {
 function resetForm() {
   document.getElementById("myForm").reset();
 }
+
+// Function to reset the table
+function resetDisplay() {
+  document.getElementById("display").deleteRow(1);
+}
