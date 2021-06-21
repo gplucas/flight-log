@@ -22,8 +22,8 @@
 		<div class="date">Date	<br><input id="date" type="date" /></div>
 		<div class="airports">Departure aerodrome	<input id="departure" type="text" /></div>
 		<div class="airports">Arrival aerodrome	<br><input id="arrival" type="text" /></div>
-		<div class="hobbs">Before start Hobbs	<input id="beforeHobbs" type="number" /></div>
-		<div class="hobbs">After shutdown Hobbs	<input id="afterHobbs" type="number" /></div>
+		<div class="hobbs">Before start Hobbs	<input id="beforeHobbs" value="" type="number" /></div>
+		<div class="hobbs">After shutdown Hobbs	<input id="afterHobbs" value="" type="number" /></div>
 		<div class="fob">Before takeoff FOB	<input id="beforeFob" type="number" /></div>
 		<div class="fob">After landing FOB	<input id="afterFob" type="number" /></div>
 		<div class="time">Start up	<input id="timeStart" type="time" /></div>
@@ -62,9 +62,13 @@
 			<th>TAKEOFF</th>
 			<th>LANDING</th>
 			<th>SHUTDOWN</th>
+			<th>FLIGHT TIME</th>
 		</tr>	
 	</table><br>
 	</div>
+	
+	<!-- Result of the total flight time, hidden in the HTML -->
+	<span hidden id="result"></span>
 	
 	<!-- script to be executed in JavaScript -->
 	<script src="script.js"></script>

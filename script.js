@@ -17,6 +17,7 @@ function displayDetails() {
 	var timeTakeoff = document.getElementById("timeTakeoff").value;
 	var timeLanding = document.getElementById("timeLanding").value;
 	var timeShutdown = document.getElementById("timeShutdown").value;
+	var result = document.getElementById("result").innerHTML=parseFloat(afterHobbs-beforeHobbs).toFixed(1);
 	
 	// Alert to show the user to fill at least the first three input fields
 		if(!date || !departure || !arrival) {
@@ -41,6 +42,7 @@ function displayDetails() {
 	var cell10 = newRow.insertCell(9);
 	var cell11 = newRow.insertCell(10);
 	var cell12 = newRow.insertCell(11);
+		var cell13 = newRow.insertCell(12);
 	
 	// Required to add a new cell for each input field
 	cell1.innerHTML = aircraft;
@@ -55,6 +57,7 @@ function displayDetails() {
 	cell10.innerHTML = timeTakeoff;
 	cell11.innerHTML = timeLanding;
 	cell12.innerHTML = timeShutdown;
+		cell13.innerHTML = result;
 	
 	row++;
 }
