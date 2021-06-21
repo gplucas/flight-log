@@ -41,7 +41,6 @@ function displayDetails() {
 	var cell10 = newRow.insertCell(9);
 	var cell11 = newRow.insertCell(10);
 	var cell12 = newRow.insertCell(11);
-	//var cell13 = newRow.insertCell(12);
 	
 	// Required to add a new cell for each input field
 	cell1.innerHTML = aircraft;
@@ -56,17 +55,16 @@ function displayDetails() {
 	cell10.innerHTML = timeTakeoff;
 	cell11.innerHTML = timeLanding;
 	cell12.innerHTML = timeShutdown;
-	//cell13.innerHTML = result;
 	
 	row++;
 }
 
-// Function to reset the form
-function resetForm() {
-  document.getElementById("myForm").reset();
+	// Function to reset the form
+	function resetForm() {
+	document.getElementById("myForm").reset();
 }
 
-// Function to reset the table
-function resetDisplay() {
-  document.getElementById("display").deleteRow(1);
+	// Function to reset the table
+	function resetDisplay() {
+	document.getElementById("display").deleteRow(1);
 }

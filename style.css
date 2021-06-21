@@ -61,7 +61,7 @@ table {
 	border: 1px solid black;
 }
 
-.myButtonBlue, .myButtonRed {
+.myButtonSubmit, .myButtonDelete {
 	border: 1px solid black;
 	border-radius: 3px;
 	display: inline-block;
