@@ -20,10 +20,10 @@ function displayDetails() {
 	var result = document.getElementById("result").innerHTML=parseFloat(afterHobbs-beforeHobbs).toFixed(1);
 	
 	// Alert to show the user to fill at least the first three input fields
-		if(!date || !departure || !arrival) {
-		alert("You have not completed the form.");
-		return;
-	}
+		//if(!date || !departure || !arrival) {
+		//alert("You have not completed the form.");
+		//return;
+	//}
 	
 	var display = document.getElementById("display");
 	
