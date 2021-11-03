@@ -1,9 +1,6 @@
-var row = 1;
+// Main Code
 
-var entry = document.getElementById("entry");
-entry.addEventListener("click", displayDetails);
-
-	// Update required when add a new var
+// Update required when add a new var
 function displayDetails() {
 	var aircraft = document.getElementById("aircraft").value;
 	var date = document.getElementById("date").value;
@@ -19,18 +16,12 @@ function displayDetails() {
 	var timeShutdown = document.getElementById("timeShutdown").value;
 	var result = document.getElementById("result").innerHTML=parseFloat(afterHobbs-beforeHobbs).toFixed(1);
 	
-	// Alert to show the user to fill at least the first three input fields
-		//if(!date || !departure || !arrival) {
-		//alert("You have not completed the form.");
-		//return;
-	//}
-	
 	var display = document.getElementById("display");
 	
-	var newRow = display.insertRow(row);
+	var newRow = display.insertRow(1);
 	
 	// Required to add a new var cell always when update the code
-	var cell1 = newRow.insertCell(0);
+    var cell1 = newRow.insertCell(0);
 	var cell2 = newRow.insertCell(1);
 	var cell3 = newRow.insertCell(2);
 	var cell4 = newRow.insertCell(3);
@@ -62,7 +53,12 @@ function displayDetails() {
 	row++;
 }
 
-	// Function to reset the form
-	function resetForm() {
+// Function to reset the form
+function resetForm() {
 	document.getElementById("myForm").reset();
+}
+
+// Function to delete the table rows
+function resetTable() {
+  document.getElementById("display").deleteRow(1);
 }

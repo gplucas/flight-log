@@ -53,8 +53,8 @@ table, th, td {
   flex-wrap: wrap;
 }
 
-/* Buttons Submit and Delete */
-.myButtonSubmit, .myButtonDelete {
+/* Buttons Submit, Delete and Restore */
+.myButtonSubmit, .myButtonDelete, .myButtonRestore {
 	border: 1px solid black;
 	border-radius: 3px;
 	display: inline-block;
