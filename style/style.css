@@ -48,9 +48,15 @@ table, th, td {
   margin: auto;
   padding: 10px;
   border-bottom: 1px solid black;
+  border-top: 1px solid black;
   border-collapse: collapse;
   background: white;
   flex-wrap: wrap;
+}
+
+table {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 /* Buttons Submit, Delete and Restore */
@@ -75,4 +81,8 @@ table, th, td {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+button:hover:focus:active { 
+  background-color: #6495ed; 
 }
