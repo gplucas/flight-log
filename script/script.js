@@ -56,7 +56,10 @@ function resetForm() {
 	document.getElementById("myForm").reset();
 }
 
-// Function to delete the table rows
+// Function to delete all table rows
 function resetTable() {
-  document.getElementById("display").deleteRow(1);
-}
+        var rowCount = display.rows.length;
+        for (var i = rowCount - 1; i > 0; i--) {
+            display.deleteRow(i);
+        }
+    }
