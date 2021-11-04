@@ -30,6 +30,10 @@ input {
 	font-size: 16px;
 }
 
+input:focus {
+  background-color: #FAFAD2;
+}
+
 .aircraft, .airports, .hobbs, .fob, .time, .date {
   display: inline-block;
   text-align: left;
