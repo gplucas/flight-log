@@ -2,6 +2,7 @@ body {
   align-items: center;
   background: #f2f4f8;
   font-family: Calibri;
+  background-image: url(https://i.imgur.com/zo6pphG.png);
 }
 
 h1, th {
@@ -49,7 +50,6 @@ input:focus {
 /* Table with results of inputs */
 table, th, td {
   text-align: center;
-  /*margin: auto;*/
   padding: 10px;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
